@@ -1,0 +1,21 @@
+.sliderContainer{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+.sliderContainer__text{
+    font-size: 5vh;
+}
+
+.sliderContainer__imgs{
+    margin: auto 0;
+}
+
+
+@media (max-width: 800px) {
+    .sliderContainer{
+        flex-direction: column;
+    }
+}

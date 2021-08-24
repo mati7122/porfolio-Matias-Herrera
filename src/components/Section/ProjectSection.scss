@@ -1,0 +1,46 @@
+.projectsContainer{
+    background-color: #5D6868;
+    color: #fff;
+    padding-bottom: 20px;
+    .projectsContainer__grid{  
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: 200px;
+        grid-gap: 50px;
+        .projectsContainer__grid__link{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;  
+            align-items: center;
+            font-size: 50px;
+            filter: brightness(0.6);
+            transition: all .7s ease;
+        }
+        .projectsContainer__grid__link:hover{
+            filter: none;
+        }
+        #link__CRUD{
+            background: url('https://i.morioh.com/2020/04/27/b52f99094e56.jpg');  
+            background-size: cover;
+        }
+        #link__e-commerce{
+            background: url('https://www.freecodecamp.org/news/content/images/2020/01/productivity-cropped-min.gif');
+            background-size: cover;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .projectsContainer{
+        .projectsContainer__grid{
+            grid-template-columns: 300px;
+            grid-template-rows: repeat(2, 200px);
+            .projectsContainer__grid__link{
+                filter: none;
+            }
+        }
+    }
+    
+}
+
