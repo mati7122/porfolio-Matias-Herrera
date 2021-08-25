@@ -1,50 +1,64 @@
-
-
-.formContainer{
+.formSection{
     display: flex;
-    justify-content: space-evenly;
-    padding: 15px 0;
-    .formContainer__formContact{
-    input{
-        display: block;
-        margin-bottom: 20px;
-        padding: 15px;
-        width: 20vw;
-    }
-    #send__button{
-        margin: 0 auto;
-        border: none;
-        color: #fff;
-        background-color:  #58A5CF;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: ease-in 0.7s;
-    }
-    #send__button:hover{
-        background-color: #176996;
-    }
-}
-
-}
-
-
-@media (max-width: 800px) {
-    .formContainer{
+    flex-direction: column;
+    // section{
+    //     position: relative;
+    // }
+    form{
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        .formContainer__info{
-            img{
-                margin-bottom: 5vh;
-            }
+        align-items: center;
+        input{
+            width: 40vw;
+            height: 5vh;
         }
-        .formContainer__formContact{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            input{
-                width: 200px;
-            }
+        textarea{
+            width: 40vw;
+            resize: none;
         }
+        #submitButton{
+            width: 20vw;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+#FlySvg{
+    width: 60px;
+    // animation-name: Fly;
+    // animation-duration: 5s;
+}
+
+@media (max-width:800px) {
+    .formSection{
+        form{
+            
+        }
+    }
+}
+
+@keyframes Fly {
+    0%{
+        left: -400px;
+        top: 40px;
+        position: absolute;
+        
+    }
+    25%{
+        left: 300px;
+        position: absolute;
+    }
+    50%{
+        left: 200px;
+        position: absolute;
+    }
+    90%{
+        left: -200px;
+        position: absolute;
+    }
+    100%{
+        left: 10px;
+        position: absolute;
     }
 }

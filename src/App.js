@@ -1,22 +1,51 @@
-import logo from './logo.svg';
 import './App.scss';
-import Header from './components/Header/header';
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import ProjectsSection from './components/Section/ProjectsSection';
 import Slider from './components/Slider/Slider';
-import Form from './components/Form/Form';
+import TechSection from './components/TechSection/Tech-section';
+import About from './components/About';
 
-// import Particles from 'react-particles-js';
-// import configParticles from './config/configParticles';
+import React, { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    // MY PROJECTS && TECH SECTION
+    let techSection = document.querySelector(".animateTech");
+    let projectSection = document.querySelector(".testStart");
+
+    function showScrollTech() {
+
+      let scrollTop = document.documentElement.scrollTop;
+
+      let techSectionHigh = techSection.offsetTop;
+      let projectSectionHigh = projectSection.offsetTop;
+
+      if (techSectionHigh -400 < scrollTop) {
+        techSection.style.opacity = 1;
+        techSection.style.marginLeft = 0;
+      }
+
+      if (projectSectionHigh -400 < scrollTop) {
+        projectSection.style.opacity = 1;
+        projectSection.style.marginRight = 0;
+      }
+
+    }
+
+    window.addEventListener('scroll', showScrollTech);
+  }, [])
+
   return (
     <div className="App" >
-      <Header name="Componente Header"/>
-      <Slider/>
-      <ProjectsSection/>
-      <Form/>
-      <Footer/>
+      <Header/>
+      <Slider />
+      <About />
+      <ProjectsSection />
+      <TechSection />
+      {/* <Form/> */}
+      <Footer />
     </div>
   );
 }

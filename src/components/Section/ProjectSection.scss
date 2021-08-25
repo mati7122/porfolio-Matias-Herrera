@@ -1,46 +1,77 @@
 .projectsContainer{
     background-color: #5D6868;
     color: #fff;
-    padding-bottom: 20px;
-    .projectsContainer__grid{  
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2, 300px);
-        grid-template-rows: 200px;
-        grid-gap: 50px;
-        .projectsContainer__grid__link{
-            cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    .projectsContainer__content{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        .testStart{
+            margin: 5vw 0;
+            width: 90%;
             display: flex;
-            justify-content: center;  
-            align-items: center;
-            font-size: 50px;
-            filter: brightness(0.6);
-            transition: all .7s ease;
-        }
-        .projectsContainer__grid__link:hover{
-            filter: none;
-        }
-        #link__CRUD{
-            background: url('https://i.morioh.com/2020/04/27/b52f99094e56.jpg');  
-            background-size: cover;
-        }
-        #link__e-commerce{
-            background: url('https://www.freecodecamp.org/news/content/images/2020/01/productivity-cropped-min.gif');
-            background-size: cover;
+            opacity: 0;
+            transition: all .5s;
+            margin-right: 30px;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                .container__buttons{
+                    display: flex;
+                    flex-direction: row;
+                        .CodeButton{
+                            text-decoration: none;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            width: 10vw;
+                            height: 7vh;
+                            background-color: lightblue;
+                            border-radius: 5px;
+                            color: #000;
+                            cursor: pointer;
+                            img{
+                                width: 20px;
+                            }   
+                        }                
+                }      
+            }
+
+            #CRUDimage{
+                width: 80vw;
+                height: 43vh;
+                background-image: url('../../assets/CRUD.gif');
+                margin-right: 5vw;
+                background-size: contain;
+            }
         }
     }
 }
 
 @media (max-width: 800px) {
     .projectsContainer{
-        .projectsContainer__grid{
-            grid-template-columns: 300px;
-            grid-template-rows: repeat(2, 200px);
-            .projectsContainer__grid__link{
-                filter: none;
+        .projectsContainer__content{
+            .testStart{
+                flex-direction: column;
+                align-items: center;
+                div{
+                    .container__buttons{
+                        .CodeButton{
+                            width: 100px;
+                        }
+                    }
+                }
+                #CRUDimage{
+                    width: 250px;
+                    height: 150px;
+                    background-size: cover;
+                    margin-right: 0;
+                }
             }
         }
     }
-    
 }
 

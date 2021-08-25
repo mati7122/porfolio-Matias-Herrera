@@ -1,8 +1,18 @@
+
+const style = {
+    p : {
+        margin: '0 40px'
+    },
+    div : {
+        margin: '5vh 0'
+    }
+}
+
 function About(){
     return(
-        <div>
-            <h1>About me</h1>
-            <p>Soy oriundo de Argentina, provincia de Buenos Aires. Hice la secundaria en la
+        <div style={style.div}>
+            <h1>Un poco sobre mi</h1>
+            <p style={style.p}>Soy oriundo de Argentina, provincia de Buenos Aires. Hice la secundaria en la
                 escuela técnica Nº5 de la localidad de Temperley.
                 La programación comenzó a interesarme a la edad de 13 años, pasaba la mayor parte del
                 tiempo con computadora. Practicaba en c++ a través de tutoriales en youtube
