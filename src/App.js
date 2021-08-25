@@ -44,7 +44,6 @@ function App() {
       <About />
       <ProjectsSection />
       <TechSection />
-      {/* <Form/> */}
       <Footer />
     </div>
   );
