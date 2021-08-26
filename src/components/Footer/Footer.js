@@ -6,9 +6,9 @@ function Footer() {
     return (
         <div className="footerContainer">
             <div className="footerContainer__text">
-                <p>this website was made with react js and sass
+                <p>Este sitio fue desarrollado con React JS y Sass
                     <br />
-                    You can also contact me on linkedIn and see the code of my projects on github
+                    Puedes contactarme a través de mi cuenta en LinkedIn y ver mis código de este y otros proyectos en GitHub
                 </p>
             </div>
 
