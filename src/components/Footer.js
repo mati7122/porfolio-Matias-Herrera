@@ -1,6 +1,6 @@
-import './Footer.scss';
-import GitHubSvg from '../../assets/svgImages/github.svg';
-import LinkeDinSvg from '../../assets/svgImages/linkedin.svg';
+
+import GitHubSvg from '../assets/svgImages/github.svg';
+import LinkeDinSvg from '../assets/svgImages/linkedin.svg';
 
 function Footer() {
     return (

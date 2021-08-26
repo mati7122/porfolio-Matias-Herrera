@@ -1,10 +1,12 @@
 import './App.scss';
-import Header from './components/Header';
-import Footer from './components/Footer/Footer';
-import ProjectsSection from './components/Section/ProjectsSection';
-import Slider from './components/Slider/Slider';
-import TechSection from './components/TechSection/Tech-section';
-import About from './components/About';
+import './Style.scss';
+
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import ProjectsSection from './Components/ProjectsSection';
+import Slider from './Components/Slider';
+import TechSection from './Components/TechSection';
+import About from './Components/About';
 
 import React, { useEffect } from 'react';
 

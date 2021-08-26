@@ -1,6 +1,6 @@
-import './ProjectSection.scss';
-import GitHubSVG from '../../assets/svgImages/github.svg';
-import WebSiteSVG from '../../assets/svgImages/website.svg';
+
+import GitHubSVG from '../assets/svgImages/github.svg';
+import WebSiteSVG from '../assets/svgImages/website.svg';
 
 function ProjectsSection() {
     return (

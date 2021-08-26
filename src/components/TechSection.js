@@ -1,15 +1,12 @@
 //SVG IMAGES
-import HTMLsvg from '../../assets/svgImages/html-1.svg';
-import CSSsvg from '../../assets/svgImages/css-3.svg';
-import JSsvg from '../../assets/svgImages/logo-javascript.svg';
-import NodeJSsvg from '../../assets/svgImages/nodejs-icon.svg';
-import SASSsvg from '../../assets/svgImages/sass-1.svg';
-import GITsvg from '../../assets/svgImages/git-icon.svg';
-import REACTsvg from '../../assets/svgImages/react-2.svg';
-import MongoDBsvg from '../../assets/svgImages/mongodb-icon-1.svg';
-
-//STYLE
-import './Tech-section.scss';
+import HTMLsvg from '../assets/svgImages/html-1.svg';
+import CSSsvg from '../assets/svgImages/css-3.svg';
+import JSsvg from '../assets/svgImages/logo-javascript.svg';
+import NodeJSsvg from '../assets/svgImages/nodejs-icon.svg';
+import SASSsvg from '../assets/svgImages/sass-1.svg';
+import GITsvg from '../assets/svgImages/git-icon.svg';
+import REACTsvg from '../assets/svgImages/react-2.svg';
+import MongoDBsvg from '../assets/svgImages/mongodb-icon-1.svg';
 
 function TechSection(){
     return(
