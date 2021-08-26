@@ -1,5 +1,5 @@
 import './App.scss';
-// import Header from './components/Header/Header.js';
+import Header from './components/Header';
 import Footer from './components/Footer/Footer';
 import ProjectsSection from './components/Section/ProjectsSection';
 import Slider from './components/Slider/Slider';
@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App" >
-      {/* <Header/> */}
+      <Header/>
       <Slider/>
       <About/>
       <ProjectsSection/>

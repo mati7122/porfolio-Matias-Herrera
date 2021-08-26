@@ -13,16 +13,19 @@
         h1{
             animation-duration: 4s;
             animation-name: showText;
+            font-size: 10vh;
         }
         h2{
             animation-duration: 6s;
             animation-name: showText;
+            font-size: 7vh;
         }
     }
 }
 
 @media (max-width: 800px) {
     .sliderContainer{
+        height: 40vh;
         justify-content: center;
         flex-direction: column;
         animation-name: none;
@@ -30,9 +33,11 @@
             margin-right: 0;
             h1{
                 animation-name: none;
+                font-size: 5vh;
             }
             h2{
                 animation-name: none;
+                font-size: 3vh;
             }
         }
     }
