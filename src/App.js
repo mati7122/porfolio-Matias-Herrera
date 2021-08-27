@@ -2,7 +2,7 @@ import './App.scss';
 import './Style.scss';
 
 // import Header from './Components/Header';
-import Footer from './Components/Footer';
+// import Footer from './Components/Footer';
 import ProjectsSection from './Components/ProjectsSection';
 import Slider from './Components/Slider';
 import TechSection from './Components/TechSection';
@@ -46,7 +46,7 @@ function App() {
       <About/>
       <ProjectsSection/>
       <TechSection/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
