@@ -1,7 +1,7 @@
 import './App.scss';
 import './Style.scss';
 
-import Header from './Components/Header';
+import Header from './Components/Header.js';
 import Footer from './Components/Footer';
 import ProjectsSection from './Components/ProjectsSection';
 import Slider from './Components/Slider';
