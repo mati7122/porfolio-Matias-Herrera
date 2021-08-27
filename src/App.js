@@ -1,7 +1,7 @@
 import './App.scss';
 import './Style.scss';
 
-import Header from './Components/Header.js';
+// import Header from './Components/Header';
 import Footer from './Components/Footer';
 import ProjectsSection from './Components/ProjectsSection';
 import Slider from './Components/Slider';
@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="App" >
-      <Header/>
+      {/* <Header/> */}
       <Slider/>
       <About/>
       <ProjectsSection/>
