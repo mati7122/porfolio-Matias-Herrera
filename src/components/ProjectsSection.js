@@ -1,47 +1,27 @@
 
-import GitHubSVG from '../assets/svgImages/github.svg';
-import WebSiteSVG from '../assets/svgImages/website.svg';
+// import GitHubSVG from '../assets/svgImages/github.svg';
+// import WebSiteSVG from '../assets/svgImages/website.svg';
+// import Img from '../assets/CRUD.gif';
+import ImgCRUD from '../assets/CRUD.gif';
+import API from '../assets/APIimage.jpg';
+
+import ArticleProject from './ArticleProject';
+
+const paragraphCRUD = `
+  Aplicación CRUD (create, read, update, delete o en español, crear, leer, actualizar, eliminar) desarrollada con
+  React JS, NodeJS y se utilizó MongoDB como base de datos.
+  Esta aplicación está desarrollada bajo Stack MERN (Mongo, Express, React y Node)
+`
+const paragraphAPI = `
+    Aplicación desarrollada con NodeJS, utilizando Express y mongoose
+`
 
 function ProjectsSection() {
     return (
-        <div className="projectsContainer">
+        <div className="ContainerProjects">
             <h1>Mis proyectos</h1>
-            <div className="projectsContainer__content">
-
-                <div className="testStart">
-
-                    <div id="CRUDimage"></div>
-
-                    <div>
-                        <div>
-                            <h2>CRUD STACK MERN</h2>
-                            <p>
-                                Aplicación CRUD (create, read, update, delete o en español, crear, leer, actualizar, eliminar) desarrollada con
-                                React JS, NodeJS y se utilizó MongoDB como base de datos.
-                                Esta aplicación está desarrollada bajo Stack MERN (Mongo, Express, React y Node)
-                            </p>
-
-                        </div>
-                        <div className="container__buttons">
-
-                            <a href="https://github.com/mati7122/CRUD-stack-MERN" className="CodeButton" style={{marginRight: '30px'}}>
-                                <strong>Código</strong>
-                                <img src={GitHubSVG} alt="GitHub"/>
-                            </a>
-
-                            <a href="https://crud-stack-mern.vercel.app" target="_blank" rel="noreferrer" className="CodeButton">
-                                <strong>App</strong>
-                                <img src={WebSiteSVG} alt="Web"/>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+            <ArticleProject title="CRUD STACK MERN" paragraph={paragraphCRUD} img={ImgCRUD} GitHub="https://github.com/mati7122/CRUD-stack-MERN" link="https://crud-stack-mern.vercel.app"/>
+            <ArticleProject title="API REST CRUD STACK MERN" paragraph={paragraphAPI} img={API} GitHub="https://github.com/mati7122/API-CRUD-Stack-MERN" link="https://api-crud-stack-mern.herokuapp.com"/>
         </div>
     );
 }
