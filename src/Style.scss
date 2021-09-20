@@ -32,8 +32,8 @@ $buttonColour: #fff;
 .AboutSection{
     p{
         padding: 1.5vh 1.5vw;
-        font-size: 2vw;
-        line-height: 6vh;
+        font-size: 30px;
+        line-height: 30px;
     }
 }
 
@@ -197,6 +197,8 @@ footer{
 
 //MEDIA QUERIES
 
+
+
 @media (max-width: 800px) {
 
     /*SLIDER*/
@@ -215,14 +217,6 @@ footer{
                 animation-name: none;
                 font-size: 3vh;
             }
-        }
-    }
-
-    /*ABOUT SECTION*/
-
-    .AboutSection{
-        p{
-            font-size: 5vw;
         }
     }
 
@@ -264,3 +258,11 @@ footer{
         .footerContainer__contact{ width: 50%; }
     }
 }
+
+// @media (max-width: 800px), (max-height: 500px) {
+//     .AboutSection{
+//         p{
+//             font-size: 2vw
+//         }
+//     }
+// }
